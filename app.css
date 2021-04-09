@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(209, 145, 145);
+   
+}
+#calculator{
+    height: 500px;
+    width: 350px;
+    background-color: darksalmon;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px;
+    position: relative;
+    top: 50px;
+}
+#history{
+    height: 20%;
+    color:yellow;
+    text-align: right
+    
+}
+#history-value{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 12px;
+}
+#output-value{
+    font-size: 50px;
+    font-weight: 700;
+    color:yellow;
+}
+#keyboard{
+    height: 80%;
+}
+#keyboard > .number, #keyboard>.operator{
+    float: left;
+    height: 25%;
+    width: 33.33%;
+    background-color: violet;
+    border: 1px solid ;
+    color: rgb(208, 216, 160);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+#keyboard > .number:hover, #keyboard>.operator:hover{
+    background-color: yellow;
+    /* transform: scale(1.1); */
+}
+#key-operator{
+    height: auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: -30px;
+}
+.operator{
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: yellow;
+    cursor: pointer;
+
+    }
+    .operator:hover{
+        background-color: yellow;
+    }
+    
